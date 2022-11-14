@@ -57,7 +57,7 @@ function AboutMe() {
       </p>
     </div>
   ) : (
-    <div className="container pt-5">
+    <div className="container py-5">
       <p>
         My name is <b>Iván Rodríguez</b> and this is a little bit about me:
       </p>{" "}

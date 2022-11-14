@@ -1,9 +1,7 @@
-import React, {  useContext, useRef } from "react";
+import React, { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
-import {ThemeContext} from "../../../contexts/ThemeContext";
 
 function NavBar() {
-  const theme = useContext(ThemeContext)
   const navButton = useRef(null);
   const linksContainerRef = useRef(null);
 
@@ -11,7 +9,7 @@ function NavBar() {
     navButton.current.classList.add("collapsed");
     linksContainerRef.current.classList.remove("show");
   }
-  
+
   return (
     <nav className="navbar navbar-expand-lg bg-secondary bg-gradient fixed-top">
       <div className="container-fluid">
