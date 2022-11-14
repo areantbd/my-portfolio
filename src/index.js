@@ -1,13 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
+import LangContextProvider from "./contexts/LangContext";
+import ThemeContextProvider from "./contexts/ThemeContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <LangContextProvider>
+      <ThemeContextProvider>
+        <Router>
+          <App />
+        </Router>
+      </ThemeContextProvider>
+    </LangContextProvider>
   </React.StrictMode>
 );
 
