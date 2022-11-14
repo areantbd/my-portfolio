@@ -15,8 +15,11 @@ function App() {
   useEffect(() => {
     setTheme(mode)
   }, [mode])
-  console.log(mode)
+
   return theme?.theme === "dark" ? (
+    <>
+    
+      <NavBar />
     <div
       style={{
         position: "relative",
@@ -24,9 +27,8 @@ function App() {
         minHeight: "100vh",
         minWidth: "100vw"
       }}
-      className="h-100 text-light"
+      className="h-100 text-light bg-dark"
     >
-      <NavBar />
 
       <Routes>
         <Route path="/" element={<HomeScreen />} />
@@ -39,6 +41,7 @@ function App() {
         <SpeedDialComponent />
       </div>
     </div>
+    </>
   ) : (
     <div
     style={{
@@ -48,7 +51,7 @@ function App() {
     }}
     className="h-100 text-dark"
   >
-    <NavBar />
+    <NavBar className="bg-dark" />
 
     <Routes>
       <Route path="/" element={<HomeScreen />} />
