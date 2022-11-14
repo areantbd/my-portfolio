@@ -1,7 +1,6 @@
 import { ThemeContext } from "./contexts/ThemeContext";
 import { useContext, useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import NavBar from "./components/UI/nav-bar/NavBar";
 import SpeedDialComponent from "./components/UI/speed-dial-component/SpeedDialComponent";
 import AboutMe from "./screens/AboutMe";
 import Certificates from "./screens/Certificates";
@@ -18,8 +17,6 @@ function App() {
 
   return theme?.theme === "dark" ? (
     <>
-    
-      <NavBar />
     <div
       style={{
         position: "relative",
@@ -51,8 +48,6 @@ function App() {
     }}
     className="h-100 text-dark"
   >
-    <NavBar className="bg-dark" />
-
     <Routes>
       <Route path="/" element={<HomeScreen />} />
       <Route path="/about" element={<AboutMe />} />

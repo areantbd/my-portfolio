@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import NavBar from "../components/UI/nav-bar/NavBar";
 import { LangContext } from "../contexts/LangContext";
 
 function AboutMe() {
@@ -10,6 +11,8 @@ function AboutMe() {
   }, [languaje]);
 
   return lang?.lang === "esp" ? (
+    <>
+      <NavBar />
     <div className="container py-5">
       <p>
         Mi nombre es <b>Iván Rodríguez</b> y esto es un poquito de mi:
@@ -56,7 +59,11 @@ function AboutMe() {
         me defiendo bien también en solitario.
       </p>
     </div>
+    </>
   ) : (
+    <>
+      <NavBar />
+    
     <div className="container py-5">
       <p>
         My name is <b>Iván Rodríguez</b> and this is a little bit about me:
@@ -102,6 +109,7 @@ function AboutMe() {
         good on my own.
       </p>
     </div>
+    </>
   );
 }
 

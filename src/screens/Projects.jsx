@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import Section from "../components/UI/section/Section";
+import NavBar from "../components/UI/nav-bar/NavBar";
 import Otfn from "../components/projects/otfn/Otfn";
 import Portfolio from "../components/projects/portfolio/Portfolio";
 import ScubaDiver from "../components/projects/scuba-diver/ScubaDiver";
@@ -12,6 +13,8 @@ function Projects() {
 
 
   return theme?.theme === "dark" ? (
+    <>
+    <NavBar />
     <div classNameName="pb-5 container">
       <div className="accordion bg-dark  container py-5" id="accordionFlushExample">
         <div className="accordion-item bg-dark text-light">
@@ -136,7 +139,10 @@ function Projects() {
         </div>
       </div>
     </div>
+    </>
   ) : (
+    <>
+      <NavBar />    
     <div>
       <div className="accordion container py-5" id="accordionFlushExample">
         <div className="accordion-item">
@@ -261,6 +267,7 @@ function Projects() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
