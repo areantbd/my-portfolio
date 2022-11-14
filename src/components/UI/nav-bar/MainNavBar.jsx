@@ -8,11 +8,10 @@ function NavBar() {
   const linksContainerRef = useRef(null);
 
   function collapseNav() {
-    theme.setTheme("dark")
     navButton.current.classList.add("collapsed");
     linksContainerRef.current.classList.remove("show");
   }
-   console.log(theme?.theme)
+  
   return (
     <nav className="navbar navbar-expand-lg bg-secondary bg-gradient fixed-top">
       <div className="container-fluid">
