@@ -17,8 +17,65 @@ const style = {
   p: 4,
 };
 
+function ChildModal() {
+  const lang = React.useContext(LangContext)
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  return lang?.lang === "esp" ? (
+    <React.Fragment>
+      <Button onClick={handleOpen}>ir al proyecto</Button>
+      <Modal
+        hideBackdrop
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="child-modal-title"
+        aria-describedby="child-modal-description"
+      >
+        <Box sx={{ ...style, width: 300 }}>
+          <h2 id="child-modal-title">Si insistes... </h2>
+          <p id="child-modal-description">
+            Puedo redireccionarte al inicio de la web de nuevo.
+          </p>
+          <div className='d-flex justify-content-between align-items-center'>
+            <a href='https://ivanrf.netlify.app/' className='text-decoration-none'>IR</a>
+            <Button onClick={handleClose}>me quedo aquí</Button>
+          </div>
+        </Box>
+      </Modal>
+    </React.Fragment>
+  ) : (
+    <React.Fragment>
+      <Button onClick={handleOpen}>go to the project</Button>
+      <Modal
+        hideBackdrop
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="child-modal-title"
+        aria-describedby="child-modal-description"
+      >
+        <Box sx={{ ...style, width: 300 }}>
+          <h2 id="child-modal-title">If you insist... </h2>
+          <p id="child-modal-description">
+            I can redirect you to this website.
+          </p>
+          <div className='d-flex justify-content-between align-items-center'>
+            <a href='https://ivanrf.netlify.app/' className='text-decoration-none'>GO</a>
+            <Button onClick={handleClose}>I stay here</Button>
+          </div>
+        </Box>
+      </Modal>
+    </React.Fragment>
+  )
+}
+
 export default function BasicModal() {
-    const lang = React.useContext(LangContext)
+  const lang = React.useContext(LangContext)
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -39,6 +96,7 @@ export default function BasicModal() {
           <Typography id="modal-modal-description" sx={{ mt: 2 }} className='text-center' >
             ¿Acabas de dar click a un enlace para visitar esta misma web?
           </Typography>
+          <ChildModal />
         </Box>
       </Modal>
     </div>
@@ -58,6 +116,7 @@ export default function BasicModal() {
           <Typography id="modal-modal-description" sx={{ mt: 2 }} className='text-center' >
           Did you just click on a link to visit this website?
           </Typography>
+          <ChildModal />
         </Box>
       </Modal>
     </div>
