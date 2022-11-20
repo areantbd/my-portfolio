@@ -26,7 +26,7 @@ function AboutMe() {
           En 2005 empecé un ciclo de grado medio en Electromecánica de
           vehículos, profesión que llevo desempeñando desde 2007, justo al
           terminar los estudios. Eso me llevó a vivir unos años en Ourense y
-          otros en Lugo, después de eso me moví a Vigo, ciudad donde estoy
+          otros en Lugo, después de eso me transladé a Vigo, ciudad donde estoy
           viviendo desde hace unos cuantos años. Como mecánico he trabajado en
           diferentes talleres, desarrollando distintos roles, desde mecánico de
           servicio rápido hasta responsable de taller. Los últimos 4 años he
@@ -35,8 +35,8 @@ function AboutMe() {
         </p>
         <p>
           A raíz de esto y por recomendación de un amigo que hizo el BootCamp un
-          año antes que yo, es que empiezo a investigar y a aprender de manera
-          autodidacta algo de HTML y CSS sobre todo. En abril de 2022 finalmente
+          año antes que yo, empiezo a investigar y a aprender de manera
+          autodidacta un poco de HTML y CSS sobre todo. En abril de 2022 finalmente
           y coincidiendo con un permiso de paternidad doy el paso y me inscribo
           en el BootCamp de desarrollo web de Ironhack. Han sido 24 semanas muy
           intensas, pero a la vez muy divertidas, en las que he aprendido mucho
@@ -46,11 +46,7 @@ function AboutMe() {
           He descubierto una profesión que me apasiona y que sacia mi
           curiosidad, ya que siempre tienes algo que aprender y a la vez me
           permite ser creativo, porque en programación, el límite lo pone la
-          imaginación. Puedes hacer literalmente todo lo que se te ocurra y eso
-          me encanta. Una de las cosas que me gustaba de mis últimos trabajos,
-          era el poder crear piezas, componentes, de un trozo de metal, pero
-          siempre tienes unos límites físicos que no puedes saltarte, en
-          programación no existen esos límites.
+          imaginación.
         </p>
         <p>
           Personalmente, soy un poco tímido al principio pero enseguida cojo
@@ -87,7 +83,7 @@ function AboutMe() {
         </p>
         <p>
           As a result of this and on the recommendation of a friend who did the
-          BootCamp a year before me, is that I start to investigate and learn in
+          BootCamp a year before me, I start to investigate and learn in
           a self-taught way some HTML and CSS above all. In April 2022 finally
           and coinciding with a paternity leave I take the step and enroll in
           the Ironhack web development BootCamp. It has been a very intense 24
@@ -98,11 +94,7 @@ function AboutMe() {
           I have discovered a profession that I love and that satisfies my
           curiosity, since you always have something to learn and at the same
           time allows me to be creative, because in programming, the limit is
-          set by your imagination. You can literally do anything you can think
-          of and I love that. One thing I liked in my last jobs, was being able to
-          create parts, components, from a piece of metal, but you always have
-          some physical limits that you can not skip, in programming there are
-          no such limits.
+          set by your imagination.
         </p>
         <p>
           Personally, I'm a bit shy at first but I quickly gain confidence, I
