@@ -8,10 +8,10 @@ To make this project I used:
 
 ### `React`
 
-All portfolio app it's created in React, using:
+All portfolio app was created in React, using:
 <ul>
-    <li><b>React router DOM:</b> To create all routes in the APP.</li>
-    <li><b>Contexts:</b> to bring ligth/dark modes and languajes.</li>
+    <li><b>React router dom:</b> To create all routes in the APP.</li>
+    <li><b>Contexts:</b> to manage languages and ligth/dark modes.</li>
     <li><b>useState:</b> to control the state of all the components that need it.</li>
     <li><b>useEffect:</b> to manage what each component does when it is assembled</li>
 </ul>
@@ -37,9 +37,11 @@ I used Bootstrap to:
 ### `MUI Icons`
 To speed dial icons.
 
+## Deploy:
 
+This portfolio was deployed in `Netlify`.
 
 
 ## If you want to see more.
 
-To see the app you only need to click <a href="https://ivanrf.netlify.app/" target="_blank">here</a>.
+To see the app you only need to click <a href="https://ivanrf.netlify.app/" target="_blank"><b>here</b></a>.
