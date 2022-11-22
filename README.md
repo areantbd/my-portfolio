@@ -40,8 +40,6 @@ To speed dial icons.
 
 
 
-## Learn More
+## If you want to see more.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To see the app you only need to click <a href="https://ivanrf.netlify.app/" target="_blank">here</a>.
