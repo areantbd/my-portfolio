@@ -2,8 +2,7 @@
 
 This project it's my personal portfolio.
 
-## Stack used:
-
+## Used stack:
 To make this project I used:
 
 ### `React`
