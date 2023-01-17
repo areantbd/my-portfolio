@@ -3,6 +3,7 @@ import Section from "../components/UI/section/Section";
 import NavBar from "../components/UI/nav-bar/NavBar";
 import Otfn from "../components/projects/otfn/Otfn";
 import Portfolio from "../components/projects/portfolio/Portfolio";
+import Rick from "../components/projects/rick&morty/Rick&Morty";
 import ScubaDiver from "../components/projects/scuba-diver/ScubaDiver";
 import ShippingBids from "../components/projects/shipping-bids/ShippingBids";
 import TvTracker from "../components/projects/tv-tracker/TvTracker";
@@ -17,6 +18,30 @@ function Projects() {
     <NavBar />
     <div classNameName="pb-5 container">
       <div className="accordion bg-dark  container py-5" id="accordionFlushExample">
+      <div className="accordion-item bg-dark text-light">
+          <h2 className="accordion-header" id="flush-headingRick">
+            <button
+              className="accordion-button collapsed bg-dark text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseRick"
+              aria-expanded="false"
+              aria-controls="flush-collapseRick"
+            >
+              <Section title="Rick & Morty Pedia" classNameName="pt-4" />
+            </button>
+          </h2>
+          <div
+            id="flush-collapseRick"
+            className="accordion-collapse collapse"
+            aria-labelledby="flush-headingRick"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div className="accordion-body">
+            <Rick />
+            </div>
+          </div>
+        </div>
         <div className="accordion-item bg-dark text-light">
           <h2 className="accordion-header" id="flush-headingOne">
             <button
@@ -145,6 +170,30 @@ function Projects() {
       <NavBar />    
     <div>
       <div className="accordion container py-5" id="accordionFlushExample">
+      <div className="accordion-item">
+          <h2 className="accordion-header" id="flush-headingRick">
+            <button
+              className="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseRick"
+              aria-expanded="false"
+              aria-controls="flush-collapseRick"
+            >
+              <Section title="Rick & Morty Pedia" classNameName="pt-4" />
+            </button>
+          </h2>
+          <div
+            id="flush-collapseRick"
+            className="accordion-collapse collapse"
+            aria-labelledby="flush-headingRick"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div className="accordion-body">
+            <Rick />
+            </div>
+          </div>
+        </div>
         <div className="accordion-item">
           <h2 className="accordion-header" id="flush-headingOne">
             <button

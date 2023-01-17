@@ -14,3 +14,11 @@ body {
     height: 100vh;
     background-color: #212529;
 }
+
+.api-anchor {
+    font-size: 1.5rem;
+}
+
+.caroussel-img {
+    max-width: 600px;
+}

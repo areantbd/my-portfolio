@@ -24,28 +24,28 @@ function ShippingBids() {
           <div className="carousel-item active">
             <img
               src={ship1}
-              className="d-block w-75 mx-auto rounded"
+              className="d-block w-75 mx-auto rounded caroussel-img"
               alt={ship1}
             />
           </div>
           <div className="carousel-item">
             <img
               src={ship2}
-              className="d-block w-75 mx-auto rounded"
+              className="d-block w-75 mx-auto rounded caroussel-img"
               alt={ship2}
             />
           </div>
           <div className="carousel-item">
             <img
               src={ship3}
-              className="d-block w-75 mx-auto rounded"
+              className="d-block w-75 mx-auto rounded caroussel-img"
               alt={ship3}
             />
           </div>
           <div className="carousel-item">
             <img
               src={ship4}
-              className="d-block w-75 mx-auto rounded"
+              className="d-block w-75 mx-auto rounded caroussel-img"
               alt={ship4}
             />
           </div>

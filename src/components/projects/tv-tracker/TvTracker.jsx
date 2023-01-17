@@ -20,13 +20,13 @@ function TvTracker() {
       >
         <div className="carousel-inner ">
           <div className="carousel-item active">
-            <img src={tv1} className="d-block w-75 mx-auto rounded" alt={tv1} />
+            <img src={tv1} className="d-block w-75 mx-auto rounded caroussel-img" alt={tv1} />
           </div>
           <div className="carousel-item">
-            <img src={tv2} className="d-block w-75 mx-auto rounded" alt={tv2} />
+            <img src={tv2} className="d-block w-75 mx-auto rounded caroussel-img" alt={tv2} />
           </div>
           <div className="carousel-item">
-            <img src={tv3} className="d-block w-75 mx-auto rounded" alt={tv3} />
+            <img src={tv3} className="d-block w-75 mx-auto rounded caroussel-img" alt={tv3} />
           </div>
         </div>
         <button
