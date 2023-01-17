@@ -109,7 +109,7 @@ function ScubaDiver() {
           </h4>
           <div className="text-center">
             <a
-              href="hhttps://myrickandmortypedia.netlify.app/"
+              href="https://myrickandmortypedia.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
