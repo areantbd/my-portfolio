@@ -10,3 +10,6 @@ const certificatesData = [
 ]
 
 module.exports = certificatesData
+
+
+

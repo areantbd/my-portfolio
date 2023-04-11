@@ -9,9 +9,10 @@ const user = {
     profession: "Web Developer",
     skills: [
         "HTML", "CSS", "JavaScript", "ReactJs",
-        "MongoDB", "Express", "NodeJs", 
-        "Handlebars", "Bootstrap", "Postman",
-        "Axios", "git", "GitHub", "Docker",
+        "React Native", "MongoDB", "Express", 
+        "NodeJs", "Handlebars", "Bootstrap",
+        "Postman", "Axios", "git", "GitHub", 
+        "Docker", "SASS", "API Rest"
     ],
     otherPackages: [
         "MUI", "bcrypt", "cron", "hbs",
