@@ -10,6 +10,7 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ContactPageTwoToneIcon from '@mui/icons-material/ContactPageTwoTone';
 import codeWars from "./icons/codewars_logo_icon_145389.ico"
+import CameraFrontIcon from '@mui/icons-material/CameraFront';
 import { grey } from "@mui/material/colors";
 import ScrollUp from "../scroll-up/ScrollUp";
 
@@ -89,6 +90,15 @@ const actions = [
       </a>
     ),
     name: "Currículum Vitae",
+  },
+  {
+    icon: (
+      <a href="https://www.getmanfred.com/perfil/ca56f7c1-9a75-406d-81d0-428c2db41f71/classic" target="_blank" rel="noreferrer" 
+      className="text-dark text-decoration-none">
+      <CameraFrontIcon />
+      </a>
+    ),
+    name: "CV Manfred",
   },
 ];
 const greyLight = grey[500];
