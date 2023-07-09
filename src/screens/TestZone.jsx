@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../components/UI/nav-bar/NavBar";
+import BlackPanther from "../components/3D/BlackPanther";
 
 function TestZone() {
   return (
@@ -9,7 +10,7 @@ function TestZone() {
       Test Zone
     </div>
 
-
+    <BlackPanther />
     </>
   );
 }
