@@ -52,7 +52,7 @@ function Box2(props) {
   )
 }
 
-function BlackPanther() {
+function Boxes() {
   return (
     <div className='container '>
       <Canvas style={{height: "600px"}}>
@@ -66,4 +66,4 @@ function BlackPanther() {
   )
 }
 
-export default BlackPanther
+export default Boxes
