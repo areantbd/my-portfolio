@@ -6,6 +6,7 @@ import AboutMe from "./screens/AboutMe";
 import Certificates from "./screens/Certificates";
 import HomeScreen from "./screens/HomeScreen";
 import Projects from "./screens/Projects";
+import TestZone from "./screens/TestZone";
 
 function App() {
   const [theme, setTheme] = useState(undefined)
@@ -32,6 +33,7 @@ function App() {
         <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/certificates" element={<Certificates />} />
+        <Route path="/test-zone" element={<TestZone />} />
       </Routes>
 
       <div className="fixed-bottom">
