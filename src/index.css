@@ -5,10 +5,12 @@
     padding: 0;
     font-size: 15px;
     font-family:monospace;
+    max-width: 100%;
 }
 
 body {
     padding-top: 50px;
+    background-color: #212529;
 }
 .home-screen {
     height: 100vh;
@@ -21,4 +23,16 @@ body {
 
 .caroussel-img {
     max-width: 600px;
+}
+.render{
+    padding-top: 50px;
+    position: sticky;
+    top: 50px
+
+}
+.car-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
 }
