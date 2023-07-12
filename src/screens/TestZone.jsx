@@ -6,10 +6,17 @@ import BMW from "../components/3D/bmw/BMW";
 
 function TestZone() {
   const [pos, setPos] = useState(0);
-  const [zoom, setZoom] = useState(50);
+  const [zoom, setZoom] = useState(50) 
+  let position = [0, 0, 90];
+  let fov = 50
+  let camera = {
+    zoom: zoom,
+    position: position,
+    fov: fov
+  }
   const [color, setColor] = useState({
-    color1: "blue",
-    color2: "blue",
+    color1: "white",
+    color2: "white",
   });
 
   useEffect(() => {
@@ -22,28 +29,33 @@ function TestZone() {
 
   window.onscroll = () => {
     scrollFunction();
-    zoomFunction();
+    // zoomFunction();
   };
   function scrollFunction() {
+    console.log(document.documentElement.scrollTop)
     if (document.documentElement.scrollTop > 0) {
       setPos(document.documentElement.scrollTop);
     }
-  }
-
-  function zoomFunction() {
-    if (window.innerWidth < 900) {
-      setZoom(20);
-    } else {
-      setZoom(50);
+    if (document.documentElement.scrollTop > 500) {
+      setZoom(document.documentElement.scrollTop / 5)
+      fov = fov + 1
     }
   }
+
+  // function zoomFunction() {
+  //   if (window.innerWidth < 900) {
+  //     setZoom(20);
+  //   } else {
+  //     setZoom(50);
+  //   }
+  // }
 
   return (
     <div style={{ height: "2000px", width: "100%" }}>
       <NavBar />
 
       {/* <BlackPanther pos={pos}/> */}
-      <BMW pos={pos} zoom={zoom} color={color} />
+      <BMW pos={pos} camera={{...camera}} color={color} />
 
       {/* <BMW2 pos={pos} /> */}
 
@@ -53,15 +65,17 @@ function TestZone() {
       >
         <h1
           onMouseEnter={() => setColor({ color1: "yellow", color2: "yellow" })}
-          onMouseLeave={() => setColor({ color1: "blue", color2: "blue" })}
+          onMouseLeave={() => setColor({ color1: "white", color2: "white" })}
         >
           Lorem Ipsum
         </h1>
         <h1
           onMouseEnter={() => setColor({ color1: "violet", color2: "violet" })}
-          onMouseLeave={() => setColor({ color1: "blue", color2: "blue" })}
+          onMouseLeave={() => setColor({ color1: "white", color2: "white" })}
         >dolor sit amet,</h1>
-        <h1>onsectetur adipiscing elit,</h1>
+        <h1
+          onMouseEnter={() => setColor({ color1: "blue", color2: "blue" })}
+          onMouseLeave={() => setColor({ color1: "white", color2: "white" })}>onsectetur adipiscing elit,</h1>
         <h1>
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,
         </h1>
