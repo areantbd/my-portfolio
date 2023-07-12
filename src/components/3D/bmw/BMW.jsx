@@ -1,4 +1,4 @@
-import React, { Suspense, useRef } from 'react'
+import React, { Suspense, useEffect, useRef, useState } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { Canvas, useFrame } from 'react-three-fiber'
 
@@ -52,7 +52,12 @@ export function Model(props) {
     </group>
   )
 }
-function BMW ({ pos, zoom, color }) {
+function BMW ({ pos, camera, color }) {
+  const [inCamera, setInCamera] = useState({})
+  useEffect(() => {
+    setInCamera(camera)
+
+  }, [camera])
   // const [responsiveZoom, setResponsiveZoom] = useState()
   // useEffect(() => {
   //   if (window.innerWidth < 900 ){
@@ -62,26 +67,11 @@ function BMW ({ pos, zoom, color }) {
   //   }
   // }, [zoom])
   console.log(color)
+  console.log(inCamera)
 
-  return (zoom === 50) ? (
-    <div style={{width: "100%", height: "80vh", zIndex: 0}} className="render">
-    
-      <Canvas camera={{zoom: 50, position: [0, 0, 90], fov: 50}}>
-        <ambientLight intensity={0.9} />
-        <pointLight position={[135, 135, 0]} intensity={0.5} color={color.color1} />
-        <pointLight position={[0, 135, 0]} intensity={0.5} color={"white"} />
-        <pointLight position={[-135, 135, 0]} intensity={1.5} color={color.color2} />
-        <pointLight position={[-135, 135, 0]} intensity={1} color={"white"} />
-        <Suspense fallback={null}>
-          <Model pos={pos} position={[0, -0.5, -10]}/>
-        </Suspense>
-        {/* <OrbitControls /> */}
-      </Canvas>
-    </div>
-  ) : (
-    <div style={{width: "100%", height: "80vh", zIndex: 0}} className="render">
-    
-      <Canvas camera={{zoom: 15, position: [0, 0, 90], fov: 50}}>
+  return (
+    <div style={{width: "100%", height: "80vh", zIndex: 0}} className="render">    
+      <Canvas camera={inCamera}>
         <ambientLight intensity={0.9} />
         <pointLight position={[135, 135, 0]} intensity={0.5} color={color.color1} />
         <pointLight position={[0, 135, 0]} intensity={0.5} color={"white"} />
