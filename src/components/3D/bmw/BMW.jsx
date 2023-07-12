@@ -52,7 +52,7 @@ export function Model(props) {
     </group>
   )
 }
-function BMW ({ pos, zoom }) {
+function BMW ({ pos, zoom, color }) {
   // const [responsiveZoom, setResponsiveZoom] = useState()
   // useEffect(() => {
   //   if (window.innerWidth < 900 ){
@@ -61,14 +61,31 @@ function BMW ({ pos, zoom }) {
   //     setResponsiveZoom(50)
   //   }
   // }, [zoom])
-  return (
+  console.log(color)
+
+  return (zoom === 50) ? (
     <div style={{width: "100%", height: "80vh", zIndex: 0}} className="render">
     
       <Canvas camera={{zoom: 50, position: [0, 0, 90], fov: 50}}>
         <ambientLight intensity={0.9} />
-        <pointLight position={[135, 135, 0]} intensity={0.5} color={"blue"} />
+        <pointLight position={[135, 135, 0]} intensity={0.5} color={color.color1} />
         <pointLight position={[0, 135, 0]} intensity={0.5} color={"white"} />
-        <pointLight position={[-135, 135, 0]} intensity={1} color={"blue"} />
+        <pointLight position={[-135, 135, 0]} intensity={1.5} color={color.color2} />
+        <pointLight position={[-135, 135, 0]} intensity={1} color={"white"} />
+        <Suspense fallback={null}>
+          <Model pos={pos} position={[0, -0.5, -10]}/>
+        </Suspense>
+        {/* <OrbitControls /> */}
+      </Canvas>
+    </div>
+  ) : (
+    <div style={{width: "100%", height: "80vh", zIndex: 0}} className="render">
+    
+      <Canvas camera={{zoom: 15, position: [0, 0, 90], fov: 50}}>
+        <ambientLight intensity={0.9} />
+        <pointLight position={[135, 135, 0]} intensity={0.5} color={color.color1} />
+        <pointLight position={[0, 135, 0]} intensity={0.5} color={"white"} />
+        <pointLight position={[-135, 135, 0]} intensity={1.5} color={color.color2} />
         <pointLight position={[-135, 135, 0]} intensity={1} color={"white"} />
         <Suspense fallback={null}>
           <Model pos={pos} position={[0, -0.5, -10]}/>
