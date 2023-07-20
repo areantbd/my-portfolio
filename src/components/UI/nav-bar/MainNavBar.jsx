@@ -42,15 +42,20 @@ function NavBar() {
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link text-light" to="/github" onClick={collapseNav} >
+                GitHub
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link text-light" to="/certificates"  onClick={collapseNav} >
                 Certificates
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className="nav-link text-light" to="/test-zone"  onClick={collapseNav} >
                 Test
               </NavLink>
-            </li>
+            </li> */}
             {/* <li className="nav-item">
               <a className="nav-link text-light" href="https://drive.google.com/file/d/1RBZLcNbRzvwgJaYDIUh5gM47I6FH8-r-/view?usp=share_link" target="_blank" onClick={collapseNav} rel="noreferrer" >Curiculum Vitae</a>
             </li> */}

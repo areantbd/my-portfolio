@@ -54,6 +54,7 @@ function TestZone() {
   return (
     <div style={{ height: "2000px", width: "100%" }}>
       <NavBar />
+      
 
       {/* <BlackPanther pos={pos}/> */}
       <BMW pos={pos} camera={{...camera}} color={color} />
