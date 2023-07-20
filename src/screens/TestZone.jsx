@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import NavBar from "../components/UI/nav-bar/NavBar";
 //import BlackPanther from "../components/3D/black-panther/BlackPanther";
 import BMW from "../components/3D/bmw/BMW";
+// import Skyline from "../components/3D/skyline/Skyline";
 // import BMW2 from "../components/3D/bmw-2/BMW2";
 
 function TestZone() {
@@ -57,7 +58,10 @@ function TestZone() {
       {/* <BlackPanther pos={pos}/> */}
       <BMW pos={pos} camera={{...camera}} color={color} />
 
+      {/* <Skyline></Skyline> */}
+
       {/* <BMW2 pos={pos} /> */}
+
 
       <div
         className="container car-text"
