@@ -270,6 +270,55 @@ function Projects() {
               </div>
             </div>
           </div> */}
+          
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="flush-headingWeather">
+            <button
+              className="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseWeather"
+              aria-expanded="false"
+              aria-controls="flush-collapseWeather"
+            >
+              <Section title="Weather App" classNameName="pt-4" />
+            </button>
+          </h2>
+          <div
+            id="flush-collapseWeather"
+            className="accordion-collapse collapse"
+            aria-labelledby="flush-headingWeather"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div className="accordion-body">
+              <Weather />
+            </div>
+          </div>
+        </div>
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="flush-headingIcash">
+            <button
+              className="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseIcash"
+              aria-expanded="false"
+              aria-controls="flush-collapseIcash"
+            >
+              <Section title="Icash" classNameName="pt-4" />
+            </button>
+          </h2>
+          <div
+            id="flush-collapseIcash"
+            className="accordion-collapse collapse"
+            aria-labelledby="flush-headingIcash"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div className="accordion-body">
+              <Icash />
+            </div>
+          </div>
+        </div>
           <div className="accordion-item">
             <h2 className="accordion-header" id="flush-headingRick">
               <button

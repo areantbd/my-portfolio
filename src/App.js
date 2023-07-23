@@ -57,6 +57,8 @@ function App() {
       <Route path="/about" element={<AboutMe />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/certificates" element={<Certificates />} />
+      <Route path="/test-zone" element={<TestZone />} />
+      <Route path="/github" element={<Github />} />
     </Routes>
 
     <div className="fixed-bottom">

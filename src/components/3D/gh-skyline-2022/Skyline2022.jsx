@@ -24,11 +24,10 @@ function Skyline2022() {
 
   return (
     <>  
-      <div className='d-flex align-items-center'>
-        <h3>Skyline 2022</h3>
-        <div className='d-flex ms-auto gap-2'>
-          <a href='https://skyline.github.com/' target='_blank' rel="noreferrer" className='btn btn-outline-info btn-sm' >Create your own skyline</a>
-          <button className='btn btn-outline-light fa fa-arrows-alt d-flex gap-3' onClick={() => changeControls()}><i className={`fa fa-circle ${color}`}></i></button>
+      <div className='d-flex flex-column'>
+        <div className='d-flex justify-content-between align-items-center mt-2'>
+          <h5>Skyline 2022</h5>
+          <button className='btn btn-outline-secondary fa fa-arrows-alt d-flex gap-3' onClick={() => changeControls()}><i className={`fa fa-circle ${color}`}></i></button>
         </div>
       </div>   
       <StlViewer   
@@ -42,7 +41,7 @@ function Skyline2022() {
           rotationX: 0,
           rotationY: 0,
           rotationZ: -0.7,
-          color: "#b7592e"
+          color: "#4e4e4e"
         }}
         // shadows
         onError={(error) => console.log(error)}
