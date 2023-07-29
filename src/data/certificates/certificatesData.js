@@ -1,5 +1,6 @@
 const certificatesData = [
-    { name: "Scrum Fundamentals", entity: "ScrumStudy", date: "12-Jun-2023", image: "https://res.cloudinary.com/dqzakvyfj/image/upload/v1686603338/Scrum_fundamentals_del7lp.png"},
+    { name: "Angular + NextJS", entity: "SoloLearn", date: "25-Jul-2023", image: "https://res.cloudinary.com/dqzakvyfj/image/upload/v1690628739/Certificados/Angular%20%2B%20NextJS.png"},
+    { name: "Scrum Fundamentals", entity: "ScrumStudy", date: "12-Jun-2023", image: "https://res.cloudinary.com/dqzakvyfj/image/upload/v1686603338/Certificados/Scrum_fundamentals_del7lp.png"},
     { name: "Introduction to SQL", entity: "SoloLearn", date: "08-Apr-2023", image: "https://res.cloudinary.com/dqzakvyfj/image/upload/v1681242159/Certificados/Introduction_to_SQL_tyfxi3.jpg"},
     { name: "JavaScript Intermed.", entity: "SoloLearn", date: "05-Apr-2023", image: "https://res.cloudinary.com/dqzakvyfj/image/upload/v1681242158/Certificados/JS_intermediate_euq0hk.jpg"},
     { name: "Web Development", entity: "Ironhack", date: "Oct-2022", image: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/60922403"},

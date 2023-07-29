@@ -11,7 +11,7 @@ function CertificateCard({ name, entity, date, image }) {
 
   return lang?.lang === "eng" ? (
     <div className="card bg-secondary col-md-3">
-      <a href={`${image}`}>
+      <a href={`${image}`} target="_blank" rel="noreferrer">
         <img src={image} className="card-img-top mt-3" alt={name} />
       </a>
       <div className="card-body">
@@ -24,7 +24,7 @@ function CertificateCard({ name, entity, date, image }) {
     </div>
   ) : (
     <div className="card bg-secondary col-md-3">
-      <a href={`${image}`}>
+      <a href={`${image}`} target="_blank" rel="noreferrer">
         <img src={image} className="card-img-top mt-3" alt={name} />
       </a>
       <div className="card-body">
