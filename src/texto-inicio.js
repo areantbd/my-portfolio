@@ -9,6 +9,7 @@ const user = {
     profession: "Web Developer",
     skills: [
         "HTML", "CSS", "JavaScript", "ReactJs",
+        "Angular", "Tailwind", "3D Rendering", 
         "React Native", "MongoDB", "Express", 
         "NodeJs", "Handlebars", "Bootstrap",
         "Postman", "Axios", "git", "GitHub", 
