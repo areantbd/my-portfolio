@@ -10,6 +10,7 @@ import TvTracker from "../components/projects/tv-tracker/TvTracker";
 import { ThemeContext } from "../contexts/ThemeContext";
 import Weather from "../components/projects/weather/Weather";
 import Icash from "../components/projects/icash/Icash";
+import AngularColection from "../components/projects/angular-colection/AngularColection";
 
 function Projects() {
   const theme = useContext(ThemeContext);
@@ -22,6 +23,30 @@ function Projects() {
           className="accordion bg-dark  container py-5"
           id="accordionFlushExample"
         >
+        <div className="accordion-item bg-dark text-light">
+          <h2 className="accordion-header" id="flush-angularApp">
+            <button
+              className="accordion-button collapsed bg-dark text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseAngularApp"
+              aria-expanded="false"
+              aria-controls="flush-collapseAngularApp"
+            >
+              <Section title="Angular Apps Collection" classNameName="pt-4" />
+            </button>
+          </h2>
+          <div
+            id="flush-collapseAngularApp"
+            className="accordion-collapse collapse"
+            aria-labelledby="flush-angularApp"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div className="accordion-body">
+              <AngularColection />
+            </div>
+          </div>
+        </div>
         <div className="accordion-item bg-dark text-light">
           <h2 className="accordion-header" id="flush-headingWeather">
             <button
@@ -270,7 +295,30 @@ function Projects() {
               </div>
             </div>
           </div> */}
-          
+          <div className="accordion-item">
+          <h2 className="accordion-header" id="flush-angularApp">
+            <button
+              className="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseAngularApp"
+              aria-expanded="false"
+              aria-controls="flush-collapseAngularApp"
+            >
+              <Section title="Angular Apps Collection" classNameName="pt-4" />
+            </button>
+          </h2>
+          <div
+            id="flush-collapseAngularApp"
+            className="accordion-collapse collapse"
+            aria-labelledby="flush-angularApp"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div className="accordion-body">
+              <AngularColection />
+            </div>
+          </div>
+        </div>
         <div className="accordion-item">
           <h2 className="accordion-header" id="flush-headingWeather">
             <button
