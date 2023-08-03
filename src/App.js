@@ -1,6 +1,6 @@
 import { ThemeContext } from "./contexts/ThemeContext";
 import { useContext, useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import SpeedDialComponent from "./components/UI/speed-dial-component/SpeedDialComponent";
 import AboutMe from "./screens/AboutMe";
 import Certificates from "./screens/Certificates";
@@ -8,6 +8,14 @@ import HomeScreen from "./screens/HomeScreen";
 import Projects from "./screens/Projects";
 import TestZone from "./screens/TestZone";
 import Github from "./screens/Github";
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
 
 function App() {
   const [theme, setTheme] = useState(undefined)
@@ -19,6 +27,7 @@ function App() {
 
   return theme?.theme === "dark" ? (
     <>
+    <ScrollToTop/>
     <div
       style={{
         position: "relative",

@@ -37,3 +37,11 @@ body {
     margin-left: 5%;
     gap: 40px;
 }
+
+.github {
+    height: 100vh;
+}
+
+.bg-dark{
+    background-color: #212529;
+}

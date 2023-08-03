@@ -5,7 +5,7 @@ function TypedComponent({text, time}) {
   const [typingStatus, setTypingStatus] = useState('Initializing');
   console.log(typingStatus)
   return (
-    <div className='d-flex flex-column justify-content-center align-items-center pt-3'>
+    <div className='px-5 d-flex flex-column justify-content-center align-items-center pt-3'>
     <TypeAnimation 
       // sequence={[text, time] || [
       //   'React', 1500,
