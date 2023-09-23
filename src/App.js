@@ -8,6 +8,7 @@ import HomeScreen from "./screens/HomeScreen";
 import Projects from "./screens/Projects";
 import TestZone from "./screens/TestZone";
 import Github from "./screens/Github";
+import ProfExperience from "./screens/ProfExperience";
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -45,6 +46,7 @@ function App() {
         <Route path="/certificates" element={<Certificates />} />
         <Route path="/test-zone" element={<TestZone />} />
         <Route path="/github" element={<Github />} />
+        <Route path="/experience" element={<ProfExperience />} />
       </Routes>
 
       <div className="fixed-bottom">

@@ -37,6 +37,11 @@ function NavBar() {
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link text-light" to="/experience" onClick={collapseNav} >
+                Experience
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link text-light" to="/projects" onClick={collapseNav} >
                 Projects
               </NavLink>

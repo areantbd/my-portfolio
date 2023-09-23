@@ -81,6 +81,11 @@ function NavBar() {
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link text-light" to="/experience" onClick={collapseNav} >
+                Experience
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link text-light" to="/projects" onClick={collapseNav} >
                 Projects
               </NavLink>
@@ -144,6 +149,11 @@ function NavBar() {
             <li className="nav-item" >
               <NavLink className="nav-link text-light" aria-current="page" to="/about" onClick={collapseNav} >
                 Sobre mi
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link text-light" to="/experience" onClick={collapseNav} >
+                Experiencia
               </NavLink>
             </li>
             <li className="nav-item">
