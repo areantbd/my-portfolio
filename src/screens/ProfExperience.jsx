@@ -1,50 +1,47 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
 import NavBar from '../components/UI/nav-bar/NavBar';
+import ExperienceCard from '../components/experienceCard/ExperienceCard';
 
 export default function ActionAreaCard() {
-  const experience = [
+  const experiences = [
     {
       employer: "Enovam",
       url: "https://enovam.com/",
       rol: "Full Stack Developer",
-      since: "09/2022",
+      since: "09/2023",
       to: "today",
       description: "Full Stack Developer React Nest",
       image: "data:image/jpeg;base64,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"
-    }
+    },
+    {
+      employer: "Little Cars",
+      url: "https://little-cars.es/e-motorsport/",
+      rol: "Workshop manager",
+      since: "05/2021",
+      to: "08/2023",
+      description: "Responsable de taller y pruebas",
+      image: "https://little-cars.es/wp-content/uploads/2021/09/Brandpack_emotorsport_positivo.png"
+    },
+    {
+      employer: "VMS",
+      url: "https://eezon.net/",
+      rol: "Workshop manager",
+      since: "12/2018",
+      to: "03/2021",
+      description: "Responsable de taller y pruebas",
+      image: "data:image/png;base64,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"
+    },
   ]
   return (
     <>
       <NavBar />
-      <div className='py-5 px-5'>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <a style={{color: "black", textDecoration: "none"}} href={experience[0].url} target='_blank' rel="noreferrer">
-              <CardMedia
-                component="img"
-                height="140"
-                image={experience[0].image}
-                alt={experience[0].employer}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {experience[0].employer}
-                </Typography>
-                <Typography gutterBottom variant="h6" component="div">
-                  {experience[0].rol}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {experience[0].description}
-                </Typography>
-            </CardContent>
-            </a>
-          </CardActionArea>
-        </Card>
+      <div className='py-5 px-5 d-flex gap-3 flex-wrap justify-content-center'>
+        <h1 className='fw-bolder fs-1'>Latest Experiences</h1>
+      </div>
+      <div className='pb-5 px-5 d-flex gap-3 flex-wrap justify-content-center'>
+        {experiences.map((experience) => (
+          <ExperienceCard {...experience} key={experience.employer} />
+        ))}
       </div>
     </>
   );
