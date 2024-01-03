@@ -3,6 +3,7 @@ import Skyline2022 from '../components/3D/gh-skyline-2022/Skyline2022'
 import NavBar from '../components/UI/nav-bar/NavBar'
 import TypedComponent from '../components/UI/typed/TypedComponent'
 import { ThemeContext } from '../contexts/ThemeContext'
+import Skyline2023 from '../components/3D/gh-skyline-2023/Skyline2023'
 
 function Github() {
   const [theme, setTheme] = useState(undefined)
@@ -20,6 +21,7 @@ function Github() {
       <div className='pt-3 bg-dark'>
         <div className='container'>
           <a href='https://skyline.github.com/' target='_blank' rel="noreferrer" className='btn btn-outline-info btn-sm' >Create your own skyline</a>
+          <Skyline2023 />
           <Skyline2022 />
           <div className='d-flex justify-content-around'>
             <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=areantbd&theme=nord&show_icons=true&locale=en&layout=compact" alt="areantbd" /></p>
